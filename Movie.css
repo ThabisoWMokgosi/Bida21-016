@@ -10,7 +10,7 @@ body{
 	width: 100vw;
 	height: 100vh;
 	overflow-x: hidden;
-	background-image: ;
+	background-color: #111;
 }
 
 .container{
@@ -90,7 +90,6 @@ color: white
 	position: absolute;
 	right: 0px;
 	background-color: #111;
-    
 }
 
 .container .right .image{
@@ -209,48 +208,131 @@ h1 span{
 
  .list{
 	 width: 250px;
-	 height: 300px;
+	 height: 250px;
 	 position: relative;
  }
  
- .list:nth-child(1){
+ .list::before{
+	content: 'best rated';
+width: 100%;
+position: absolute;
+left: 0;
+bottom: 0;
+background-color: rgba 0,0,0,0.5;
+font-size: 18px;
+color: white;	
+ }
+ 
+ .Trending .list:nth-child(1){
 	 background-image: url('JohnWick.jpg');
 	 background-repeat: no-repeat;
-	 background-size: 300px;
+	 background-size: 250px;
  }
 
-.list:nth-child(2){
+.Trending .list:nth-child(2){
 	background-image: url('Spidermannowayhome.jpg');
-	 	 background-size: 300px;
+	 	 background-size: 250px;
 		  background-repeat: no-repeat;
 }
 
 
-.list:nth-child(3){
+.Trending .list:nth-child(3){
 	background-image: url('Space_Jam.jpg');
 	 background-repeat: no-repeat;
-	 background-size: 300px;
+	 background-size: 250px;
 }
 
 
-.list:nth-child(4){
+.Trending .list:nth-child(4){
 	background-image: url('Nobody_PosterArt.jpg');
 	 background-repeat: no-repeat;
-	 background-size: 300px;
+	 background-size: 250px;
 }
 
-.list:nth-child(5){
+.Trending .list:nth-child(5){
 	background-image: url('JohnWick.jpg');
 	 background-repeat: no-repeat;
-	 background-image: 300px;
+	 background-image: 250px;
 }
 
+.Comedy .list:nth-child(1){
+	 background-image: url('Space_Jam.jpg');
+	 background-repeat: no-repeat;
+	 background-size: 250px;
+ }
 
+.Comedy .list:nth-child(2){
+	background-image: url('Spidermannowayhome.jpg');
+	 	 background-size: 250px;
+		  background-repeat: no-repeat;
+		  position: right
+}
 
+.Comedy .list:nth-child(3){
+	background-image: url('Madea.jpg');
+	 	 background-size: 250px;
+		  background-repeat: no-repeat;
+		  position: right
+}
 
+.Comedy .list:nth-child(4){
+	background-image: url('GROWN_UPS.jpg');
+	 	 background-size: 250px;
+		  background-repeat: no-repeat;
+		  position: right
+}
 
+.Sci-fi .list:nth-child(1){
+	background-image: url('Spidermannowayhome.jpg');
+	background-size: 250px;
+		  background-repeat: no-repeat;
+}
 
+.Sci-fi .list:nth-child(2){
+	background-image: url('iron.jpg');
+ background-repeat: no-repeat;
+	 background-size: 250px;
+	 position: center;
+	 }
+.video-container{
+position: flex;
+top: 50%;
+left: 50%;
+width: 850px;
+}
 
-
-
-
+Video{
+position: flex;
+right: 0;
+bottom: 0;
+min-width: 100%; 
+min-height: 100%;
+opacity: 0.4;
+}
+	
+	 
+.button{
+	border: solid;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	position: right;
+	border-radius: 15px;
+	display: flex;
+	position: flex;
+	background-color: none;
+}
+ 
+.button-container{
+	width: 300px;
+	height: 200px;
+	padding-top: 100px;
+	position: fixed;
+}
